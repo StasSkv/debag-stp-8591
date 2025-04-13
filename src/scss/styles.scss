@@ -9,19 +9,24 @@
 @import './start-buildung-now.scss';
 @import './footer.scss';
 @import './popup-cookies-policy.scss';
-@import "./privacy-policy.scss";
+@import './privacy-policy.scss';
 
 :root {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
   font-weight: 400;
 
-  color: $_secondary-color;
-  background-color: $_background-color;
+  // color: $_secondary-color;
+  // background-color: $_background-color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: $_secondary-color;
+  background-color: $_background-color;
 }
