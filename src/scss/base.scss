@@ -1,8 +1,15 @@
 html {
   scroll-behavior: smooth;
 }
+
 a {
   -webkit-tap-highlight-color: transparent;
+  outline: none;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: transparent;
 }
 
 .title {
