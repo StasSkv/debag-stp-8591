@@ -2,82 +2,441 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/debag-stp-8591/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Build your dream candy town in Candy Road! Match candies, unlock decorations, and create your sweet world. Download now and start building!"
+    />
+    <meta
+      name="keywords"
+      content="Candy Road, candy town, build game, match 3, puzzle, decoration, C-Horse Games, interactive game."
+    />
+    <meta name="author" content="C-Horse Games" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sweetcrush.site" />
+    <title>Build Your Dream Candy Town!</title>
+
+    <link rel="icon" type="image/png" href="/debag-stp-8591/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
-    <script type="module" crossorigin src="/debag-stp-8591/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/debag-stp-8591/assets/index-95868f65.css">
+    <script type="module" crossorigin src="/debag-stp-8591/commonHelpers2.js"></script>
+    <link rel="stylesheet" href="/debag-stp-8591/assets/styles-f66d8544.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/debag-stp-8591/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+    <a href="index.html">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="/debag-stp-8591/assets/logo-desc@1x-b88f5f8c.jpg 1x, /debag-stp-8591/assets/logo-desc@2x-f0824eb4.jpg 2x"
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="data:image/jpeg;base64,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 1x, /debag-stp-8591/assets/logo-mob@2x-724fea12.jpg 2x"
+        />
+        <img
+          src="/debag-stp-8591/assets/logo-desc@1x-b88f5f8c.jpg"
+          alt="Build Your Dream Candy Town"
+          class="header-logo-img"
+          width="24"
+          height="24"
+        />
+      </picture>
+    </a>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
+    <svg class="header-burger" width="24" height="24">
+      <use href="/debag-stp-8591/assets/sprite-ee703b85.svg#icon-burger-menu"></use>
+    </svg>
+
+    <svg class="header-x-close" width="24" height="24">
+      <use href="/debag-stp-8591/assets/sprite-ee703b85.svg#icon-x-close"></use>
+    </svg>
+
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a href="#home" class="header-nav-link">Home</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#match-to-unlock" class="header-nav-link">Match to Unlock</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#explore-the-candy" class="header-nav-link"
+            >Explore the Candy Town Areas</a
           >
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
+        <li class="header-nav-item">
+          <a href="#daily-candy-gifts" class="header-nav-link"
+            >Daily Candy Gifts</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a href="#show-off-your-town" class="header-nav-link"
+            >Show Off Your Town</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a href="#start-buildung-now" class="header-nav-link"
+            >Start Building Now</a
           >
         </li>
       </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="header-modal">
+  <div class="header-modal-container">
+    <nav class="header-nav-modal">
+      <ul class="header-nav-list-modal">
+        <li class="header-nav-item-modal">
+          <a href="#home" class="header-nav-link-modal">Home</a>
+        </li>
+        <li class="header-nav-item-modal">
+          <a href="#match-to-unlock" class="header-nav-link-modal"
+            >Match to Unlock</a
+          >
+        </li>
+        <li class="header-nav-item-modal">
+          <a href="#explore-the-candy" class="header-nav-link-modal"
+            >Explore the Candy Town Areas</a
+          >
+        </li>
+        <li class="header-nav-item-modal">
+          <a href="#daily-candy-gifts" class="header-nav-link-modal"
+            >Daily Candy Gifts</a
+          >
+        </li>
+        <li class="header-nav-item-modal">
+          <a href="#show-off-your-town" class="header-nav-link-modal"
+            >Show Off Your Town</a
+          >
+        </li>
+        <li class="header-nav-item-modal">
+          <a href="#start-buildung-now" class="header-nav-link-modal"
+            >Start Building Now</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <main>
+      <section id="home" class="home-section">
+  <div class="container">
+    <div class="home-container-desk">
+      <h1 class="home-title" data-text="Build Your Dream Candy Town!">
+        Build Your Dream Candy Town!
+      </h1>
+      <h3 class="home-subtitle">Match candies and unlock sweet decorations!</h3>
+      <div class="home-picture-text">
+        <p class="home-text">
+          Imagine your perfect candy town! Match candies in the game to unlock
+          new buildings and decorations. Let's start building!
+        </p>
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/debag-stp-8591/assets/desk-81a91ef0.png 1x, /debag-stp-8591/assets/desk@2x-19c43677.png 2x"
+          />
+          <source
+            media="(max-width: 1199.98px)"
+            srcset="/debag-stp-8591/assets/mob-fbe6c457.png 1x, /debag-stp-8591/assets/mob@2x-73a878e9.png 2x"
+          />
+          <img
+            class="home-image"
+            src="/debag-stp-8591/assets/mob-fbe6c457.png"
+            alt="Candy Town Preview"
+            width="288"
+            height="240"
+          />
+        </picture>
+      </div>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.chorse.match3&hl=en&gl=us"
+        target="_blank"
+        class="home-link"
+      >
+        <svg class="home-play-icon" width="16.57" height="17.79">
+          <use href="/debag-stp-8591/assets/sprite-ee703b85.svg#icon-google-play"></use>
+        </svg>
+        <span>Google Play</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+      <section id="match-to-unlock" class="match-to-unlock">
+  <div class="container">
+    <h2 class="match-title title" data-text="Match to Unlock">
+      Match to Unlock
+    </h2>
+    <div class="match-content">
+      <div class="match-subtitle-wrap">
+        <h3 class="match-subtitle">Match and Decorate!</h3>
+        <p class="match-description-toogle">
+          Every match brings you closer to building your candy town. See what
+          sweet rewards you can unlock!
+        </p>
+      </div>
+
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="/debag-stp-8591/assets/match-to-unlock-main@1x-7c43d3e8.jpg 1x, /debag-stp-8591/assets/match-to-unlock-main@2x-0ee3cb2f.jpg 2x"
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="/debag-stp-8591/assets/match-to-unlock-main@mob@1x-9f126fee.jpg 1x, /debag-stp-8591/assets/match-to-unlock-main@mob@2x-ed522d32.jpg 2x"
+        />
+        <img
+          src="/debag-stp-8591/assets/match-to-unlock-main@mob@1x-9f126fee.jpg"
+          alt="match-to-unlock"
+          class="match-img"
+          width="288"
+          height="252"
+        />
+      </picture>
+
+      <p class="match-description">
+        Every match brings you closer to building your candy town. See what
+        sweet rewards you can unlock!
+      </p>
+    </div>
+    <span class="match-back-wrap"></span>
+    <span class="lolypop-wrap"></span>
+    <span class="candies-wrap"></span>
+    <span class="candy-wrap"></span>
+  </div>
+</section>
+
+      <section id="explore-the-candy" class="explore-the-candy-section">
+  <div class="container explore-the-candy-container">
+    <h2 class="title" data-text="Explore the Candy Town Areas">
+      Explore the Candy Town Areas
+    </h2>
+    <div class="explore-desk-flex">
+      <div class="explore-the-candy-content">
+        <h3 class="explore-the-candy-subtitle">Discover Candy Town!</h3>
+        <img
+          class="explore-game-img"
+          src="/debag-stp-8591/assets/mob-1d98dce1.png"
+          srcset="/debag-stp-8591/assets/mob-1d98dce1.png 1x, /debag-stp-8591/assets/mob@2x-33557ecb.png 2x"
+          alt="Game screenshot levels with girl"
+          width="288"
+          height="252"
+        />
+        <p class="explore-the-candy-text">
+          Each area in Candy Town has unique decorations and challenges. Explore
+          and unlock them all!
+        </p>
+      </div>
+      <div class="explore-the-candy-right">
+        <img
+          class="explore-game-img-desk"
+          src="/debag-stp-8591/assets/desk-b634b706.png"
+          srcset="/debag-stp-8591/assets/desk-b634b706.png 1x, /debag-stp-8591/assets/desk@2x-c4bca543.png 2x"
+          alt="Game screenshot levels with girl"
+          width="288"
+          height="252"
+        />
+      </div>
     </div>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
+    <img
+      class="explore-candies-image-mob"
+      srcset="/debag-stp-8591/assets/explore-candies-9cfad518.png 1x, /debag-stp-8591/assets/explore-candies@2x-297abd2e.png 2x"
+      src="/debag-stp-8591/assets/explore-candies-9cfad518.png"
+      alt="Candies"
+      width="105"
+      height="53"
+    />
+    <div class="explore-candy-wrapper">
       <img
-        class="pic"
-        src="/debag-stp-8591/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
+        class="explore-candy"
+        srcset="/debag-stp-8591/assets/explore-candy-470e3c3e.png 1x, /debag-stp-8591/assets/explore-candy@2x-eaffec7d.png 2x"
+        src="/debag-stp-8591/assets/explore-candy-470e3c3e.png"
+        alt="Candy"
+        width="111"
+        height="115"
+      />
+    </div>
+    <img
+      class="explore-candy-floss"
+      srcset="/debag-stp-8591/assets/explore-candy-floss-569b4944.png 1x, /debag-stp-8591/assets/explore-candy-floss@2x-2a52da6c.png 2x"
+      src="/debag-stp-8591/assets/explore-candy-floss-569b4944.png"
+      alt="Candy"
+      width="240"
+      height="300"
+    />
+  </div>
+</section>
+
+      <section id="daily-candy-gifts" class="daily-candy-gifts">
+<div class="container"> 
+<h2 class="daily-title title" data-text="Daily Candy Gifts">Daily Candy Gifts</h2>
+<h3 class="daily-subtitle">Spin for Daily Candy Gifts!</h3>
+<p class="daily-description">Spin the wheel every day to get sweet gifts for your candy town!</p>
+<span class="daily-centr"></span>
+<span class="daily-left"></span>
+<span class="daily-right"></span>
+</div>
+
+
+
+</section>
+      <section id="show-off-your-town" class="show-town-section">
+  <div class="container show-town-container">
+    <h2 class="show-town-title" data-text="Show Off Your Town">
+      Show Off Your Town
+    </h2>
+    <div class="show-town-block">
+      <div class="show-town-block-text">
+        <h3 class="show-town-subtitle">Share Your Sweet Creation!</h3>
+        <p class="show-town-text">
+          Show your friends your amazing candy town! Share it and inspire
+          others!
+        </p>
+      </div>
+      <div class="show-town-block-image">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/debag-stp-8591/assets/desk-9b889e05.png 1x, /debag-stp-8591/assets/desk@2x-a08dd51c.png 2x"
+          />
+          <source
+            media="(max-width: 1199.98px)"
+            srcset="/debag-stp-8591/assets/mob-b940a63f.png 1x, /debag-stp-8591/assets/mob@2x-8f8146b7.png 2x"
+          />
+          <img
+            class="show-town-image"
+            src="/debag-stp-8591/assets/mob-b940a63f.png"
+            alt="Phone with candy town"
+            width="288"
+            height="331"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="show-candy-wrapper">
+      <img
+        class="show-candy"
+        srcset="/debag-stp-8591/assets/candy-c8078edd.png 1x, /debag-stp-8591/assets/candy@2x-85c278bf.png 2x"
+        src="/debag-stp-8591/assets/candy-c8078edd.png"
+        alt="Candy"
+        width="115"
+        height="116"
       />
     </div>
   </div>
 </section>
+
+      <section id="start-buildung-now" class="start-buildung-now">
+  <div class="container">
+    <h2 class="start-title title" data-text="Start Building Now">
+      Start Building Now
+    </h2>
+
+    <h3 class="start-subtitle">Ready to build your candy town?</h3>
+
+    <p class="start-description">
+      Download Candy Road and start your adventure!
+    </p>
+
+    <a
+      href="https://play.google.com/store/apps/details?id=com.chorse.match3&hl=en&gl=us"
+      target="_blank"
+      class="start-link"
+    >
+      <span class="start-icon-wrap">
+        <svg class="start-play-icon" width="17" height="19">
+          <use href="/debag-stp-8591/assets/sprite-ee703b85.svg#icon-google-play"></use>
+        </svg>
+      </span>
+      Google Play
+    </a>
+
+    <span class="start-balanced"></span>
+    <span class="start-galaxy-left"></span>
+    <span class="start-galaxy-right"></span>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container footer-container">
+    <ul class="footer-list">
+      <li class="footer-item">
+        <a href="./privacy-policy.html">Privacy Policy</a>
+      </li>
+      <li class="footer-item">
+        <a href="./terms-and-conditions.html">Terms &amp; Conditions</a>
+      </li>
+      <li class="footer-item">
+        <a href="./cookies-policy.html">Cookies Policy</a>
+      </li>
+    </ul>
+    <p class="footer-copyright">
+      &copy;<span id="currentYear">2025</span> sweetcrush.site, All rights
+      reserved.
+    </p>
+    <img
+      class="girl-candy-road-image"
+      srcset="/debag-stp-8591/assets/girl-candy-road-23c7de8c.png 1x, /debag-stp-8591/assets/girl-candy-road@2x-88145c7a.png 2x"
+      src="/debag-stp-8591/assets/girl-candy-road-23c7de8c.png"
+      alt="Girl Candy Road"
+      width="54"
+      height="81"
+    />
+    <img
+      class="boosters-image"
+      srcset="/debag-stp-8591/assets/boosters-c1cfa9d0.png 1x, /debag-stp-8591/assets/boosters@2x-19e0f6d6.png 2x"
+      src="/debag-stp-8591/assets/boosters-c1cfa9d0.png"
+      alt="Candy Town Boosters"
+      width="54"
+      height="53"
+    />
+  </div>
+</footer>
+
+    <div id="cookie-popup" class="popup-section">
+  <div class="container popup-container">
+    <h3 class="popup-title" data-text="Cookies Policy">Cookies Policy</h3>
+    <p class="popup-text">
+      We use cookies to improve your experience on our website. By browsing this
+      website, you agree to our use of cookies.
+    </p>
+    <div class="popup-buttons">
+      <button class="button-cookies accept" type="button">
+        Accept Cookies
+      </button>
+      <button class="button-cookies decline" type="button">
+        Decline Cookies
+      </button>
+    </div>
+  </div>
+</div>
 
 
     
