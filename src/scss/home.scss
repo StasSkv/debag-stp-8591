@@ -99,6 +99,7 @@
   }
 }
 .home-link {
+  -webkit-tap-highlight-color: transparent;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 12px;
   font-weight: 800;
@@ -137,11 +138,11 @@
     0px 70px 28px 0px rgba(0, 0, 0, 0.01), 0px 39px 23px 0px rgba(0, 0, 0, 0.05),
     0px 17px 17px 0px rgba(0, 0, 0, 0.09), 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
 }
-.home-link:active {
-  border: 4px solid $_button-border-color;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1),
-    0px 4px 10px 0px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(0, 0, 0, 0.02);
-}
+// .home-link:active {
+//   border: 4px solid $_button-border-color;
+//   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1),
+//     0px 4px 10px 0px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(0, 0, 0, 0.02);
+// }
 
 .home-play-icon {
   @include media(desktop) {
