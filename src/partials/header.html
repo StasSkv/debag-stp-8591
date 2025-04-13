@@ -1,13 +1,105 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="container">
+    <a href="index.html">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /img/header/logo-desc@1x.jpg 1x,
+            /img/header/logo-desc@2x.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+            /img/header/logo-mob@1x.jpg 1x,
+            /img/header/logo-mob@2x.jpg 2x
+          "
+        />
+        <img
+          src="/img/header/logo-desc@1x.jpg"
+          alt="Build Your Dream Candy Town"
+          class="header-logo-img"
+          width="24"
+          height="24"
+        />
+      </picture>
+    </a>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+    <svg class="header-burger" width="24" height="24">
+      <use href="/img/sprite.svg#icon-burger-menu"></use>
+    </svg>
+
+    <svg class="header-x-close" width="24" height="24">
+      <use href="/img/sprite.svg#icon-x-close"></use>
+    </svg>
+
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a href="#home" class="header-nav-link">Home</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#match-to-unlock" class="header-nav-link">Match to Unlock</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#explore-the-candy" class="header-nav-link"
+            >Explore the Candy Town Areas</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a href="#daily-candy-gifts" class="header-nav-link"
+            >Daily Candy Gifts</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a href="#show-off-your-town" class="header-nav-link"
+            >Show Off Your Town</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a href="#start-buildung-now" class="header-nav-link"
+            >Start Building Now</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
+<div class="header-modal">
+  <div class="header-modal-container">
+    <nav class="header-nav-modal">
+      <ul class="header-nav-list-modal">
+        <li class="header-nav-item-modal">
+          <a href="#home" class="header-nav-link-modal">Home</a>
+        </li>
+        <li class="header-nav-item-modal">
+          <a href="#match-to-unlock" class="header-nav-link-modal"
+            >Match to Unlock</a
+          >
+        </li>
+        <li class="header-nav-item-modal">
+          <a href="#explore-the-candy" class="header-nav-link-modal"
+            >Explore the Candy Town Areas</a
+          >
+        </li>
+        <li class="header-nav-item-modal">
+          <a href="#daily-candy-gifts" class="header-nav-link-modal"
+            >Daily Candy Gifts</a
+          >
+        </li>
+        <li class="header-nav-item-modal">
+          <a href="#show-off-your-town" class="header-nav-link-modal"
+            >Show Off Your Town</a
+          >
+        </li>
+        <li class="header-nav-item-modal">
+          <a href="#start-buildung-now" class="header-nav-link-modal"
+            >Start Building Now</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

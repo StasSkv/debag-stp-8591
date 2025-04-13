@@ -1,0 +1,103 @@
+.footer {
+  background-color: $_footer-background-color;
+  background-image: image-set(
+    url(../img/footer/dropping-footer.png) 1x,
+    url(../img/footer/dropping-footer@2x.png) 2x
+  );
+  background-size: 320px;
+  background-position: top;
+  background-repeat: repeat-x;
+  padding: 25px 0 24px;
+  box-shadow: 0px -68px 19px 0px rgba(0, 0, 0, 0),
+    0px -43px 17px 0px rgba(0, 0, 0, 0.01),
+    0px -24px 15px 0px rgba(0, 0, 0, 0.05),
+    0px -11px 11px 0px rgba(0, 0, 0, 0.09), 0px -3px 6px 0px rgba(0, 0, 0, 0.1);
+
+  @include media(desktop) {
+    background-image: image-set(
+      url(../img/footer/dropping-footer-desk.png) 1x,
+      url(../img/footer/dropping-footer-desk@2x.png) 2x
+    );
+    background-size: 1200px;
+    padding: 118px 0 32px;
+    box-shadow: 0px -304px 85px 0px rgba(0, 0, 0, 0),
+      0px -195px 78px 0px rgba(0, 0, 0, 0.01),
+      0px -110px 66px 0px rgba(0, 0, 0, 0.05),
+      0px -49px 49px 0px rgba(0, 0, 0, 0.09),
+      0px -12px 27px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.footer-container {
+  position: relative;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 60px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 42px;
+  }
+}
+
+.footer-item {
+  color: $_secondary-color;
+  transition: color 0.5s ease-in-out;
+}
+
+.footer-item:hover {
+  color: $_accept-button-color;
+}
+.footer-item:active {
+  color: $_link-visited-color;
+}
+
+.footer-copyright {
+  color: $_tertiary-color;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 14px;
+  }
+}
+
+.girl-candy-road-image {
+  position: absolute;
+  top: 5.5px;
+
+  @include media(desktop) {
+    width: 109px;
+    height: 162px;
+    top: unset;
+    bottom: -16px;
+  }
+}
+.boosters-image {
+  position: absolute;
+  top: 19.5px;
+  right: 16px;
+
+  @include media(desktop) {
+    width: 128px;
+    height: 126px;
+    top: unset;
+    bottom: 0;
+    right: 40px;
+  }
+}

@@ -1,0 +1,124 @@
+.explore-the-candy-section {
+  padding: 24px 0;
+  scroll-margin-top: 40px;
+
+  @include media(desktop) {
+    padding: 60px 0;
+    scroll-margin-top: 108px;
+  }
+}
+
+.explore-the-candy-container {
+  @include media(desktop) {
+    position: relative;
+  }
+}
+
+.explore-desk-flex {
+  @include media(desktop) {
+    display: flex;
+  }
+}
+.explore-the-candy-content {
+  @include media(desktop) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 24px;
+  }
+}
+.explore-the-candy-subtitle {
+  margin-bottom: 16px;
+  color: $_tertiary-color;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+
+  @include media(desktop) {
+    margin-bottom: 24px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.5;
+  }
+}
+
+.explore-game-img {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.explore-the-candy-text {
+  color: $_color-text;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: unset;
+    font-size: 24px;
+  }
+}
+
+.explore-candies-image-mob {
+  margin: 0 auto;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.explore-the-candy-right {
+  width: 50%;
+}
+
+.explore-game-img-desk {
+  display: none;
+
+  @include media(desktop) {
+    display: unset;
+    border-radius: 16px;
+    width: 548px;
+    height: 480px;
+    box-shadow: 0px 4px 40px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.explore-candy-wrapper {
+  display: none;
+
+  @include media(desktop) {
+    display: unset;
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1))
+      drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.09))
+      drop-shadow(0px 34px 21px rgba(0, 0, 0, 0.05))
+      drop-shadow(0px 61px 24px rgba(0, 0, 0, 0.01))
+      drop-shadow(0px 95px 27px rgba(0, 0, 0, 0));
+  }
+}
+
+.explore-candy {
+  @include media(desktop) {
+    animation: rotate 10s linear infinite;
+  }
+}
+
+.explore-candy-floss {
+  display: none;
+
+  @include media(desktop) {
+    display: unset;
+    position: absolute;
+    top: -18px;
+  }
+}

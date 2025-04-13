@@ -2,22 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Build your dream candy town in Candy Road! Match candies, unlock decorations, and create your sweet world. Download now and start building!"
+    />
+    <meta
+      name="keywords"
+      content="Candy Road, candy town, build game, match 3, puzzle, decoration, C-Horse Games, interactive game."
+    />
+    <meta name="author" content="C-Horse Games" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sweetcrush.site" />
+    <title>Build Your Dream Candy Town!</title>
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <load src="./partials/header.html" />
+    <main>
+      <load src="./partials/home.html" />
+      <load src="./partials/match-to-unlock.html" />
+      <load src="./partials/explore-the-candy.html" />
+      <load src="./partials/daily-candy-gifts.html" />
+      <load src="./partials/show-off-your-town.html" />
+      <load src="./partials/start-buildung-now.html" />
+    </main>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <load src="./partials/footer.html" />
+    <load src="./partials/popup-cookies-policy.html" />
 
     <script type="module" src="./main.js"></script>
   </body>

@@ -1,0 +1,161 @@
+.daily-candy-gifts {
+  padding-top: 24px;
+  padding-bottom: 36px;
+  scroll-margin-top: 40px;
+}
+
+.daily-candy-gifts .container {
+  padding-bottom: 389px;
+  position: relative;
+}
+
+.daily-title {
+  margin-bottom: 8px;
+}
+
+.daily-candy-gifts .title::before {
+  left: auto;
+}
+
+.daily-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: $_tertiary-color;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.daily-description {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: normal;
+  color: $_color-text;
+}
+
+@media screen and (max-width: 1199px) {
+  .daily-candy-gifts .container {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 288px 373px;
+    background-image: image-set(
+      url('/img/daily-candy-gifts/daily-mob@1x.png') 1x,
+      url('/img/daily-candy-gifts/daily-mob@2x.png') 2x
+    );
+  }
+
+  .daily-centr {
+    width: 200px;
+    height: 204px;
+    position: absolute;
+    bottom: 84px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .daily-centr::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: image-set(
+      url('/img/daily-candy-gifts/spinning@mob-1x.png') 1x,
+      url('/img/daily-candy-gifts/spinning@mob-2x.png') 2x
+    );
+    filter: $drop-shadow;
+    z-index: 0;
+  }
+}
+
+@include media(desktop) {
+  .daily-candy-gifts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    scroll-margin-top: 108px;
+  }
+
+  .daily-candy-gifts .container {
+    padding-bottom: 475px;
+  }
+
+  .daily-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .daily-subtitle {
+    font-size: 32px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .daily-description {
+    font-size: 24px;
+    max-width: 643px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .daily-right {
+    width: 240px;
+    height: 408px;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+  }
+
+  .daily-right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: image-set(
+      url('/img/daily-candy-gifts/daily-right-desc@1x.png') 1x,
+      url('/img/daily-candy-gifts/daily-right-desc@2x.png') 2x
+    );
+    filter: $drop-shadow;
+    z-index: 0;
+  }
+
+  .daily-left {
+    width: 240px;
+    height: 408px;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+  }
+
+  .daily-left::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: image-set(
+      url('/img/daily-candy-gifts/daily-left-desc@1x.png') 1x,
+      url('/img/daily-candy-gifts/daily-left-desc@2x.png') 2x
+    );
+    filter:$drop-shadow;
+    z-index: 0;
+  }
+
+  .daily-centr {
+    width: 400px;
+    height: 409px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .daily-centr::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: image-set(
+      url('/img/daily-candy-gifts/daily-centr-desc@1x.png') 1x,
+      url('/img/daily-candy-gifts/daily-centr-desc@2x.png') 2x
+    );
+    filter:$drop-shadow;
+    z-index: 0;
+  }
+}

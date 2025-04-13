@@ -1,0 +1,271 @@
+.privacy-header {
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.privacy-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.go-home-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.go-home-link span {
+  display: flex;
+  padding: 4.8px 7.6px;
+}
+
+.go-home-link {
+  color: $_home-button-text-color;
+  transition: color 0.3s ease-in-out;
+}
+
+.go-home-link:hover,
+.go-home-link:focus {
+  color: $_accept-button-color;
+}
+
+.go-home-link:focus:not(:hover) {
+  color: $_secondary-color;
+}
+
+.go-home-link:active {
+  color: $_link-visited-color;
+}
+
+.go-home {
+  fill: $_home-button-text-color;
+  transition: fill 0.3s ease-in-out;
+}
+
+.go-home-link:hover .go-home,
+.go-home-link:focus .go-home {
+  fill: $_accept-button-color;
+}
+
+.go-home-link:focus:not(:hover) .go-home {
+  fill: $_secondary-color;
+}
+
+.go-home-link:active .go-home {
+  fill: $_link-visited-color;
+}
+
+.privacy-policy-main {
+  padding-bottom: 40px;
+}
+
+.privacy-policy-main h2 {
+  position: relative;
+  color: $_primary-color;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.006em;
+  margin-bottom: 16px;
+  text-align: start;
+  margin-left: 3px;
+}
+
+.privacy-policy-main h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: $_white-color;
+  font-size: 24px;
+  font-weight: 900;
+  -webkit-text-stroke: 6px $_white-color;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.privacy-policy-main h3 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $_secondary-color;
+  margin-bottom: 20px;
+}
+
+.privacy-policy-main h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $_secondary-color;
+  margin-bottom: 20px;
+}
+
+.privacy-policy-main a {
+  overflow-wrap: break-word;
+  font-size: 16px;
+}
+
+.privacy-policy-main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $_secondary-color;
+  margin-bottom: 20px;
+}
+
+.privacy-policy-main ul {
+  margin-bottom: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.privacy-policy-main ul a {
+  text-decoration: underline;
+  text-underline-offset: 2.5px;
+  text-decoration-thickness: 1px;
+}
+
+.third-party-access-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.privacy-policy-main ul li {
+  position: relative;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.privacy-policy-main ul li p {
+  margin: 0;
+}
+
+.privacy-policy-main ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 6px;
+  height: 6px;
+  background-color: $_secondary-color;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+#another-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: start;
+  padding: 0;
+}
+
+#another-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  justify-content: start;
+}
+
+#another-list .another-text {
+  padding-left: 25px;
+}
+
+#another-list li::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  width: 6px;
+  height: 6px;
+  background-color: $_secondary-color;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+#privacy-links li {
+  margin-bottom: 6px;
+}
+
+#privacy-links li {
+  margin-bottom: 6px;
+}
+
+#cookies-links li {
+  margin-bottom: 6px;
+}
+
+#cookies-links a {
+  line-height: 1.5;
+}
+
+.another-link {
+  text-decoration: underline;
+}
+
+.end-police p {
+  margin-bottom: 0;
+}
+
+@include media(desktop) {
+  .privacy-header {
+    padding-top: 60px;
+    padding-bottom: 16px;
+  }
+
+  .privacy-policy-main h2 {
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .privacy-policy-main h2::before {
+    font-size: 36px;
+  }
+
+  .privacy-policy-main h3 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $_secondary-color;
+    margin-bottom: 20px;
+  }
+
+  .privacy-policy-main h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $_secondary-color;
+    margin-bottom: 20px;
+  }
+
+  .privacy-policy-main a {
+    overflow-wrap: break-word;
+    font-size: 20px;
+  }
+
+  .privacy-policy-main p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $_secondary-color;
+    margin-bottom: 20px;
+  }
+
+  .end-police p {
+    margin-bottom: 160px;
+  }
+
+  .privacy-policy-main ul li::before {
+    top: 14px;
+  }
+
+  #another-list li::before {
+    top: 14px;
+  }
+}

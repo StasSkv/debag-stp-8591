@@ -1,4 +1,26 @@
-$_main_color: #242424;
-$_main_bg_color: rgba(255, 255, 255, 0.87);
-$_header_color: #747bff;
-$_header_accent_color: red;
+$_background-color: #ffe3f3;
+$_primary-color: #e449ac;
+$_accept-button-color: #de259b;
+$_button-border-color: #ff9ed5;
+$_link-visited-color: #6f114d;
+
+$_secondary-color: #6416a7;
+$_tertiary-color: #8400bf;
+$_footer-background-color: #cea2ee;
+$_home-button-text-color: #440f71;
+$_cookies-popup-bg-gradient: linear-gradient(180deg, #aa67e0 0%, #5d387a 100%);
+$_header-bg-gradient: radial-gradient(
+  114.88% 52.2% at 50.77% 12.13%,
+  #c67fe8 3.71%,
+  #5eaff0 100%
+);
+
+$_color-text: #032b45;
+$_button-active-color: #ccc;
+$_white-color: #fff;
+
+$drop-shadow: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1))
+  drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.09))
+  drop-shadow(0px 34px 21px rgba(0, 0, 0, 0.05))
+  drop-shadow(0px 61px 24px rgba(0, 0, 0, 0.01))
+  drop-shadow(0px 95px 27px rgba(0, 0, 0, 0));
